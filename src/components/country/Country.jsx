@@ -1,8 +1,14 @@
+import "./country.css";
 
-export default function Country({country}) {
-    const {name} = country;
-    console.log(country);
+export default function Country({ country }) {
+  const { name, flags } = country;
+  console.log(country);
   return (
-    <div>Name : {name.common}</div>
-  )
+    <div>
+      <div className="country-container">
+        <h3>Name : {name.common}</h3>
+        <img src={flags.png} alt="" />
+      </div>
+    </div>
+  );
 }
