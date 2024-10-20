@@ -12,7 +12,7 @@ export default function Country({ country }) {
 
   return (
     <div>
-      <div className="country-container">
+      <div style={{color: visited? 'tomato' : 'wheat'}} className={`country ${visited ? 'visited' : 'non-visited'}`}>
         <h3>Name : {name?.common}</h3>
         <img className="w" src={flags?.png} alt="" />
         <p>Area : <small>{area}</small></p>
@@ -23,6 +23,7 @@ export default function Country({ country }) {
       {
         visited ? "I have visited": "I want to visit"
       }
+      <br />
       <button>Mark Visit</button>
       </div>
     </div>

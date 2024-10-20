@@ -1,4 +1,4 @@
-.country-container{
+.country{
     padding: 20px;
     margin: 20px;
     border: 2px solid tomato;
@@ -7,4 +7,12 @@
 
 .w{
     width: 160px;
+}
+
+.visited{
+    background-color: slategray;
+    
+}
+.non-visited{
+    background-color: slateblue;
 }
