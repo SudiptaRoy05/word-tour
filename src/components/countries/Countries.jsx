@@ -41,8 +41,9 @@ export default function Countries() {
       <div>
         <h4>Flags</h4>
         {
-            flags.map(f => (
-                <img style={{height : '80px'}} key={f.cca3} src={f.flags.png} alt={`${f.name} flag`} />
+            flags.map((f, idx) => (
+                <img style={{height : '60px'}} key={idx} src={f.flags.png}  />
+                
             ))
             
         }

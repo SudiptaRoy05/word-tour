@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./country.css";
+import CountryDetails from '../countryDetails/CountryDetails'
 
 export default function Country({ country, handleVisitedCountry, handleFlagBtn }) {
   const { name, flags, area, population, cca3} = country;
@@ -28,6 +29,10 @@ export default function Country({ country, handleVisitedCountry, handleFlagBtn }
       <button onClick={()=>{handleVisitedCountry(country)}}>Mark Visit</button>
       <button onClick={()=>{handleFlagBtn(country)}}>Mark Flag</button>
       </div>
+
+      <CountryDetails country={country} handleVisitedCountry={handleVisitedCountry} handleFlagBtn={handleFlagBtn}></CountryDetails>
+
+      
     </div>
   );
 }
